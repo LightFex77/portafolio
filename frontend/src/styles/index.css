@@ -1,4 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* .home-container {
+  border: 1px red solid;
+} */
+/*Header -----------------------*/
+.main-page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  align-items: center;
+}
+.header-menu-item {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header-menu-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Inputs ------------------------ */
+.button {
+  padding: 20px 30px;
+  height: 64px;
+  min-width: 203px;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  background-color: #ffff;
+  cursor: pointer;
+  border: 2px #282524 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-dark {
+  background-color: #282524;
+  color: #ffff;
+  border: 0;
+}
+.button-yellow {
+  background-color: #f2ba38;
+  color: #ffff;
+  border: 0;
+}
+/* main */
+
+.main-home-presentation-information {
+  display: flex;
+  padding: 50px 60px;
+  justify-content: space-between;
+}
+.home-section-presentation-information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.presentation-information-buttons {
+  padding-top: 50px;
+  display: flex;
+  width: 484px;
+  justify-content: space-between;
+}
+.home-section-presentation-photo {
+  width: 380px;
+  height: 380px;
+  background-color: #f2ba38;
+  border-radius: 480px;
+  background: url("../assets//me.png");
+}
+.home-projects-section-header {
+  margin-top: 100px;
+  padding: 20px 94px;
+  color: #ffff;
+  background-color: #f2ba38;
+}
+.home-projects-section-header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/*section projects */
+.home-section-projects {
+}
+.section-project {
+  padding: 0px 60px;
+  justify-content: space-between;
+  display: flex;
+}
+.section-project-information {
+  padding: 80px 10px;
+}
+.section-project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-project-buttons {
+  display: flex;
+  gap: 60px;
+  padding-top: 60px;
+}
+.section-project-img{
+    width: 500px;
+    height: 500px;
+}
+.section-project-information ul li {
+  background-color: #f2ba38;
+  color: #ffff;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  align-items: center;
+}
+.section-project-information ul {
+  display: flex;
+  gap: 20px;
+}
+/* section project intercalado */
+
+.even {
+}
+.odd {
+  background-color: #f2ba381a;
+  display: flex;
+  flex-direction: row-reverse;
 }

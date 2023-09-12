@@ -9,7 +9,7 @@ export const projectInformation = [
       ],
       externalLinkGit: "https://github.com/proyecto1",
       externalLinkProject: "https://proyecto1.com",
-      projectImg: "ruta-de-la-imagen-1.jpg",
+      projectImg: "./assets/project-ej.png",
     },
     {
       projectTitle: "Proyecto 2",
@@ -20,7 +20,7 @@ export const projectInformation = [
       ],
       externalLinkGit: "https://github.com/proyecto2",
       externalLinkProject: "https://proyecto2.com",
-      projectImg: "ruta-de-la-imagen-2.jpg",
+      projectImg: "./assets/project-ej.png",
     },
   ];
   

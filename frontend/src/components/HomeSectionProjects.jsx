@@ -14,7 +14,7 @@ const HomeSectionProjects = () => {
           externalLinkGit={item.externalLinkGit}
           externalLinkProject={item.externalLinkProject}
           projectImg={item.projectImg}
-          additionalClassName={index % 2 === 0 ? "even" : "odd"}
+          additionalClassNameP={index % 2 === 0 ? "even" : "odd"}
         />
       ))}
     </div>
