@@ -1,17 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom"
 import Button from "./inputs/Button";
+import { Icon } from "@iconify/react";
 
 const Header = () => {
   return (
     <header className="main-page-header">
       <div className="header-logo-item">
-        <h2 style={{color: "#F2BA38"}}>👋 Hola!</h2>
+      <Icon icon="fluent-emoji:waving-hand" height="4rem"/> <span>Hola!</span>
       </div>
       <div className="header-menu-item">
-        <NavLink to="#">Inicio</NavLink>
-        <NavLink to="#">Proyectos</NavLink>
-        <Button buttonText="Curriculum"/>
+        <Button>
+        Curriculum
+        <Icon icon="akar-icons:download" height="1.5rem"/>
+        </Button>
       </div>
     </header>
   )

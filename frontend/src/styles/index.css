@@ -13,6 +13,16 @@
   padding: 30px 60px;
   align-items: center;
 }
+.header-logo-item{
+  color: #F2BA38;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header-logo-item span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 .header-menu-item {
   display: flex;
   gap: 40px;
@@ -46,6 +56,7 @@
 .button-dark {
   background-color: #282524;
   color: #ffff;
+  font-size: 1rem;
   border: 0;
 }
 .button-yellow {
@@ -57,13 +68,38 @@
 
 .main-home-presentation-information {
   display: flex;
-  padding: 50px 60px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-around;
 }
+
 .home-section-presentation-information {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  flex-wrap: wrap;
+}
+.presentation-information-h1{
+  color: #282524;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.information-h1-second-span{
+  color: #F2BA38;
+}
+.information-address-span{
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.information-description-p{
+  width: 34rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.information-description-p i {
+  color: #282524;
 }
 .presentation-information-buttons {
   padding-top: 50px;
@@ -72,15 +108,19 @@
   justify-content: space-between;
 }
 .home-section-presentation-photo {
-  width: 380px;
-  height: 380px;
-  background-color: #f2ba38;
+  overflow: hidden;
   border-radius: 480px;
-  background: url("../assets//me.png");
+  display: flex;
+  margin: 40px;
+  width: 23.7rem;
+  height: 23.7rem;
 }
+.presentation-photo-frame{
+  position: absolute;
+} 
 .home-projects-section-header {
-  margin-top: 100px;
   padding: 20px 94px;
+  width: 100%;
   color: #ffff;
   background-color: #f2ba38;
 }
@@ -89,16 +129,25 @@
   list-style: none;
   justify-content: space-between;
 }
+.home-projects-section-header ul li{
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  gap: 2px;
+}
 
 /*section projects */
-.home-section-projects {
+.home-section-projects {  
+  display: flex;
+  flex-direction: column;
 }
 .section-project {
   padding: 0px 60px;
   justify-content: space-between;
-  display: flex;
 }
 .section-project-information {
+  width: 34.8rem;
+  min-height: 214px;
   padding: 80px 10px;
 }
 .section-project-text {
@@ -111,9 +160,9 @@
   gap: 60px;
   padding-top: 60px;
 }
-.section-project-img{
-    width: 500px;
-    height: 500px;
+.section-project-img img {
+  width: 31.25rem;
+    height: 31.25rem;
 }
 .section-project-information ul li {
   background-color: #f2ba38;
@@ -132,9 +181,12 @@
 /* section project intercalado */
 
 .even {
+  display: flex;
+  flex-wrap: wrap;
 }
 .odd {
   background-color: #f2ba381a;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
 }

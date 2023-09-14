@@ -8,34 +8,39 @@ const ProjectSectionElement = ({
   languageList,
   externalLinkGit,
   externalLinkProject,  
-  projectImg
+  projectImg,
 }) => {
   return (
     <>
       <section className={`section-project ${ additionalClassNameP }`}>
-        <div className="section-project-img" style={{background: `url("${projectImg}")`}}>
+        <div className="section-project-img">
+          <img src={projectImg} />
         </div>
         <div className="section-project-information">
          <div className="section-project-text">
          <h3 style={{color: "#282524"}}>{projectTitle}</h3>
           <ul>
             {languageList.map((item, index) => (
-              <li key={index}>{item.text}</li>
+              <li key={index}><i class={item.icon}></i>{item.text}</li>
             ))}
           </ul>
-          <p>{projectInformation}</p>
+          <p style={{fontSize: "20px", fontWeight: "400px"}}>{projectInformation}</p>
          </div>
           <div className="section-project-buttons">
             <Button
               onClick={() => window.open(externalLinkGit, "_blank")}
-              buttonText="Ver Github"
               additionalClassName="button-dark"
-            />
+              buttonIcon="fa-brands fa-github"
+            >
+              Ver Github
+            </Button>
             <Button
               onClick={() => window.open(externalLinkProject, "_blank")}
-              buttonText="Ver Página"
+              buttonIcon="fa-solid fa-share-nodes"
               additionalClassName="button-yellow"
-            />
+            >
+              Ver Página
+            </Button>
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ import React from "react";
 import ProjectSectionElement from "./inputs/ProjectSectionElement";
 import { projectInformation } from "../ProjectInformation";
 
-const HomeSectionProjects = () => {
+const Projects = () => {
   return (
     <div className="home-section-projects">
       {projectInformation.map((item, index) => (
@@ -21,4 +21,4 @@ const HomeSectionProjects = () => {
   );
 };
 
-export default HomeSectionProjects;
+export default Projects;
