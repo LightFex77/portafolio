@@ -44,7 +44,7 @@ const Landing = () => {
         </section>
         <section className="home-section-presentation-photo">
           <img className="presentation-photo-frame" src={frame} />
-          <img src={me} />
+          <img src={me} className="presentation-photo-me" />
         </section>
         <div className="home-projects-section-header">
           <ul>
