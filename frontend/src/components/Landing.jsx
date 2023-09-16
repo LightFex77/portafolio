@@ -3,6 +3,7 @@ import Button from "./inputs/Button";
 import me from "../assets/me.png";
 import frame from "../assets/Frame.png";
 import { Icon } from "@iconify/react";
+import { images } from "../assets/images";
 
 const Landing = () => {
   return (
@@ -13,7 +14,10 @@ const Landing = () => {
             <span>Soy Andres Genes,</span>
             <br />
             <span className="information-h1-second-span">
-              Desarrollador Web 👨🏻‍💻🇵🇾
+              Desarrollador Web
+              <span className="h1-second-span-img">
+              <img src={images.technologist} /><img src={images.flag} />
+              </span>
             </span>
           </h1>
           <span className="information-address-span">
@@ -39,23 +43,23 @@ const Landing = () => {
           </div>
         </section>
         <section className="home-section-presentation-photo">
-          <img className="presentation-photo-frame" src={frame}/>
+          <img className="presentation-photo-frame" src={frame} />
           <img src={me} />
         </section>
         <div className="home-projects-section-header">
-        <ul>
-          <li>
-            <Icon icon="vscode-icons:file-type-js" height="2rem" /> JAVASCRIPT
-          </li>
-          <li>
-            <Icon icon="fa6-brands:react" height="2rem" /> REACT
-          </li>
-          <li>
-            <Icon icon="nonicons:html-16" height="2rem" />
-            HTML & CSS
-          </li>
-        </ul>
-      </div>
+          <ul>
+            <li>
+              <i class= "fa-brands fa-js fa-xl" /> JAVASCRIPT
+            </li>
+            <li>
+              <Icon icon="fa6-brands:react" height="2rem" /> REACT
+            </li>
+            <li>
+              <Icon icon="nonicons:html-16" height="2rem" />
+              HTML & CSS
+            </li>
+          </ul>
+        </div>
       </main>
     </>
   );
